@@ -1,0 +1,9 @@
+#include<stdio.h>
+
+int main()
+{
+printf("Hello World in c\n");
+printf("Thank You");
+
+return (0);
+}
