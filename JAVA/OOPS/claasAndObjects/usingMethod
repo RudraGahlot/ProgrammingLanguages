@@ -1,0 +1,26 @@
+package oppsInJava;
+
+public class classExamples {
+
+	public static void main(String[] args) {
+	
+		student s1 = new student();
+		student s2 = new student();
+		
+		s1.insertRecord(111,"arjun");
+		s2.insertRecord(113,"karan");
+		s1.displayInformation();
+		s2.displayInformation();
+		
+	}
+}
+
+class student{
+	int rollno;
+	String name;
+	void insertRecord(int r , String n) {
+		rollno = r;
+		name = n;
+	}
+	void displayInformation() {System.out.println(rollno + " " + name);}
+}
