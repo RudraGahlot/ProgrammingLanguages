@@ -1,0 +1,17 @@
+package oppsInJava;
+
+public class classExamples {
+
+	public static void main(String[] args) {
+		student s1 = new student();  // creating object for the class
+		
+		System.out.println("id ="+ s1.id);
+		System.out.println("name =" + s1.name);
+	
+	}
+}
+
+class student{
+	int id  = 01;
+	String name = " Rudra Gahlot";
+}
