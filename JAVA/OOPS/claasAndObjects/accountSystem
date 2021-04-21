@@ -1,0 +1,50 @@
+package oppsInJava;
+
+class Account{
+	int acc_no;
+	String name;
+	int amount;
+	
+	void insert(int i, String j , int k) {
+		acc_no=i;
+		name = j;
+		amount = k;
+	}
+	
+	void deposit(int k) {
+		amount = amount+k;
+		System.out.println("amount is =" + k);
+	}
+	
+	void withdrawl(int k) {
+		if(amount<k) {
+			System.out.println("Insufficient balance");
+		} else {
+			amount = amount-k;
+		System.out.println(k + " withdrawn");
+		}
+	}
+	
+	void checkBalance() {System.out.println("Balance is "+ amount);}
+	void display() {System.out.println(acc_no+" "+name+" "+amount);}
+}
+
+public class exampleOfAccount {
+
+	public static void main(String[] args) {
+		Account a1 = new Account();
+		
+		a1.insert(98967, "Rudra" , 100007);
+		
+		a1.display();
+		
+		a1.checkBalance();
+		
+		a1.deposit(4500);
+		a1.checkBalance();
+		
+		a1.withdrawl(1500);
+		a1.checkBalance();
+		
+	}
+}
